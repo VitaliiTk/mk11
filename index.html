@@ -1,0 +1,3806 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JADE</title>
+    <link rel="icon" type="image/x-icon" href="./img/icon.jpg">
+    <script src="https://kit.fontawesome.com/fac5d2f90e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- admin panel start -->
+    <nav class="navbar">
+        <h1 class="title">
+            MK11
+        </h1>
+        <ul class="hero_list">
+            <li class="hero_item selected">
+                <a href="jade.html">JADE</a>
+            </li>
+            <li class="hero_item">
+                <a href="kung_lao.html">KUNG LAO</a>
+            </li>
+        </ul>
+        <!-- <button id="ps" class="key_view_btn">playstation</button>
+        <button id="xbox" class="key_view_btn">xbox</button>
+        <button id="uni" class="key_view_btn">universal</button>
+        <a href="index.html" class="main_btn">На главную</a> -->
+    </nav>
+    <!-- admin panel end -->
+
+
+
+
+
+    <section class="card">
+        <div class="container">
+            <img src="./img/jade.jpg" alt="jade" class="character-img">
+
+
+            <h1 class="card_title">
+                JADE
+            </h1>
+
+            <!-- tabs -->
+            <ul class="tab_list">
+                <li class="tab_link" onclick="openTab(event, 'basic')">
+                    Основные атаки
+                </li>
+                <li class="tab_link" onclick="openTab(event, 'combo')">
+                    Комбо-атаки
+                </li>
+                <li class="tab_link" onclick="openTab(event, 'special')">
+                    Спецприемы
+                </li>
+                <li class="tab_link" onclick="openTab(event, 'finishers')">
+                    Добивания
+                </li>
+                <li class="tab_link" onclick="openTab(event, 'abilities')">
+                    Способности
+                </li>
+                <li class="tab_link" onclick="openTab(event, 'super')">
+                    Супер-Комбо
+                </li>
+            </ul>
+
+
+            <!-- tab content basic -->
+            <div class="tab_content" id="basic">
+                <ul class="trick_list">
+                    <h3 class="subtitle">
+                        Основные атаки
+                    </h3>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Быстрая оплеуха
+                            </div>
+                            <div class="trick_execution">
+                                <span class="square">execution</span>
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        7
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        2
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        16
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Удар жезлом
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/left.png" alt="">
+                                <span>+</span>
+                                <span class="square"></span>
+                                <!-- <img src="img/icons/square.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        15
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -10
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        7
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Прямой удар ладонью
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/down.png" alt="">
+                                <span>+</span>
+                                <span class="square"></span>
+                                <!-- <img src="img/icons/square.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        7
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -6
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        15
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Тычок ладонью
+                            </div>
+                            <div class="trick_execution">
+                                <span class="triangle"></span>
+                                <!-- <img src="img/icons/triangle.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        7
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -3
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        18
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Покачивающийся кий
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/left.png" alt="">
+                                <span>+</span>
+                                <span class="triangle"></span>
+                                <!-- <img src="img/icons/triangle.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        10
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -13
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        15
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Мощный удар жезлом
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/right.png" alt="">
+                                <span>+</span>
+                                <span class="triangle"></span>
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        28
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -19
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        15
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Восходящий посох
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/down.png" alt="">
+                                <span>+</span>
+                                <span class="triangle"></span>
+                                <!-- <img src="img/icons/triangle.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        9
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -9
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        24
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Прямой удар ногой
+                            </div>
+                            <div class="trick_execution">
+                                <span class="cross"></span>
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        11
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -1
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        12
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Удар ногой сбоку
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/left.png" alt="">
+                                <span>+</span>
+                                <span class="cross"></span>
+                                <!-- <img src="img/icons/cross.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        11
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -2
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        10
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Коленолом
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/right.png" alt="">
+                                <span>+</span>
+                                <span class="cross"></span>
+                                <!-- <img src="img/icons/cross.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        16
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -4
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        17
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Пяткой сбоку
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/down.png" alt="">
+                                <span>+</span>
+                                <span class="cross"></span>
+                                <!-- <img src="img/icons/cross.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        8
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -5
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        14
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Удар каблуком
+                            </div>
+                            <div class="trick_execution">
+                                <span class="circle"></span>
+                                <!-- <img src="img/icons/circle.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        13
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        3
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        14
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Тейкдаун
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/left.png" alt="">
+                                <span>+</span>
+                                <span class="circle"></span>
+                                <!-- <img src="img/icons/circle.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        16
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -2
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        23
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Эденийский танец
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/right.png" alt="">
+                                <span>+</span>
+                                <span class="circle"></span>
+                                <!-- <img src="img/icons/circle.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        18
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -4
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        13
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Проникающий удар
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/down.png" alt="">
+                                <span>+</span>
+                                <span class="circle"></span>
+                                <!-- <img src="img/icons/circle.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        10
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -7
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        20
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <h3 class="subtitle">
+                        Атаки в прыжке
+                    </h3>
+
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Эденийская ладонь
+                            </div>
+                            <div class="trick_execution">
+                                <span class="square"></span>
+                                <!-- <img src="img/icons/square.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <img src="img/gif/jade/basic/Edenian_Palm.gif" alt="">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        9
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -12
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        0
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Тычок жезлом
+                            </div>
+                            <div class="trick_execution">
+                                <span class="triangle"></span>
+                                <!-- <img src="img/icons/triangle.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <img src="img/gif/jade/basic/pole_bash.gif" alt="">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        9
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -7
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        10
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Пятка воительницы
+                            </div>
+                            <div class="trick_execution">
+                                <span class="cross"></span>
+                                <!-- <img src="img/icons/cross.png" alt=""> -->
+                                <span>или</span>
+                                <span class="circle"></span>
+                                <!-- <img src="img/icons/circle.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <img src="img/gif/jade/basic/Warrior's_Heel.gif" alt="">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        10
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -7
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        24
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <h3 class="subtitle">
+                        Атаки в быстром прыжке
+                    </h3>
+
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Мощный удар посохом
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/up.png" alt="">
+                                <span>,</span>
+                                <span class="square"></span>
+                                <!-- <img src="img/icons/square.png" alt=""> -->
+                                <span>или</span>
+                                <img src="img/icons/up.png" alt="">
+                                <span>,</span>
+                                <span class="triangle"></span>
+                                <!-- <img src="img/icons/triangle.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <img src="img/gif/jade/basic/Staff_Slam.gif" alt="">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        9
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -15
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        31
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Эденийское веретено
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/up.png" alt="">
+                                <span>,</span>
+                                <span class="cross"></span>
+                                <!-- <img src="img/icons/cross.png" alt=""> -->
+                                <span>или</span>
+                                <img src="img/icons/up.png" alt="">
+                                <span>,</span>
+                                <span class="circle"></span>
+                                <!-- <img src="img/icons/circle.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <img src="img/gif/jade/basic/Edenian_Drill.gif" alt="">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        8
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -14
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        32
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <h3 class="subtitle">
+                        Атаки пробуждения
+                    </h3>
+
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Пятка с небес
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/up.png" alt="">
+                                <span>+</span>
+                                <span class="triangle"></span>
+                                <!-- <img src="img/icons/triangle.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <img src="img/gif/jade/basic/Heavens_Heel.gif" alt="">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        10
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -12
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        42
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Спасительный сюрикен
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/up.png" alt="">
+                                <span>+</span>
+                                <span class="cross"></span>
+                                <!-- <img src="img/icons/cross.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <img src="img/gif/jade/basic/Glavier_Saver.gif" alt="">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        11
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -8
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        9
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <h3 class="subtitle">
+                        Атаки чистого блока
+                    </h3>
+
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Пятка с небес
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/up.png" alt="">
+                                <span>+</span>
+                                <span class="triangle"></span>
+                                <!-- <img src="img/icons/triangle.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        10
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -12
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        42
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Спасительный сюрикен
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/up.png" alt="">
+                                <span>+</span>
+                                <span class="cross"></span>
+                                <!-- <img src="img/icons/cross.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        11
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -8
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        9
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <h3 class="subtitle">
+                        Броски
+                    </h3>
+
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Бросок вперед
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/right.png" alt="">
+                                <span>+</span>
+                                <span class="l1"></span>
+                                <span>или</span>
+                                <img src="img/icons/right.png" alt="">
+                                <span>+</span>
+                                <span class="square"></span>
+                                <span>+</span>
+                                <span class="cross"></span>
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <img src="img/gif/jade/basic/Toward_Throw.gif" alt="">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        10
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        0
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        14
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Бросок назад
+                            </div>
+                            <div class="trick_execution">
+                                <span class="l1"></span>
+                                <!-- <img src="img/icons/l1.png" alt=""> -->
+                                <span>или</span>
+                                <span class="square"></span>
+                                <!-- <img src="img/icons/square.png" alt=""> -->
+                                <span>+</span>
+                                <span class="cross"></span>
+                                <!-- <img src="img/icons/cross.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <img src="img/gif/jade/basic/Back_Throw.gif" alt="">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        10
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        0
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        19
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <h3 class="subtitle">
+                        Уходы с перекатом
+                    </h3>
+
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Пробуждение с перекатом вперед
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/right.png" alt="">
+                                <span>+</span>
+                                <span class="l2"></span>
+                                <!-- <img src="img/icons/l2.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <img src="img/gif/jade/basic/Forward_Getup_Roll.gif" alt="">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        2
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        0
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        0
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Пробуждение с перекатом назад
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/left.png" alt="">
+                                <span>+</span>
+                                <span class="l2"></span>
+                                <!-- <img src="img/icons/l2.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <img src="img/gif/jade/basic/Backward_Getup_Roll.gif" alt="">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        2
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        0
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        0
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <h3 class="subtitle">
+                        Воздушный уход
+                    </h3>
+
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Изворот (в воздухе)
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/down.png" alt="">
+                                <span>+</span>
+                                <span class="r2"></span>
+                                <!-- <img src="img/icons/r2.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <img src="img/gif/jade/basic/air_escape.gif" alt="">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        0
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        0
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        0
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+
+            <!-- tab content combo -->
+            <div class="tab_content" id="combo">
+                <ul class="trick_list">
+                    <h3 class="subtitle">
+                        Комбо-атаки
+                    </h3>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Простое обольщение
+                            </div>
+                            <div class="trick_execution">
+                                <span class="square"></span>
+                                <!-- <img src="img/icons/square.png" alt=""> -->
+                                <span>,</span>
+                                <span class="triangle"></span>
+                                <!-- <img src="img/icons/triangle.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <img src="img/gif/jade/combo/Simple_Seduction.gif" alt="">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        14
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -7
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        19
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                На крючке
+                            </div>
+                            <div class="trick_execution">
+                                <span class="square"></span>
+                                <!-- <img src="img/icons/square.png" alt=""> -->
+                                <span>,</span>
+                                <span class="triangle"></span>
+                                <!-- <img src="img/icons/triangle.png" alt=""> -->
+                                <span>,</span>
+                                <span class="circle"></span>
+                                <!-- <img src="img/icons/circle.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <img src="img/gif/jade/combo/Baited.gif" alt="">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        12
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -6
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        26
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Задира
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/left.png" alt="">
+                                <span>+</span>
+                                <span class="square"></span>
+                                <!-- <img src="img/icons/square.png" alt=""> -->
+                                <span>,</span>
+                                <span class="triangle"></span>
+                                <!-- <img src="img/icons/triangle.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <img src="img/gif/jade/combo/Teaser.gif" alt="">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        21
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -19
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        16
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Эденийская воительница
+                            </div>
+                            <div class="trick_execution">
+                                <span class="triangle"></span>
+                                <!-- <img src="img/icons/triangle.png" alt=""> -->
+                                <span>,</span>
+                                <span class="square"></span>
+                                <!-- <img src="img/icons/square.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <img src="img/gif/jade/combo/Edenian_Warrior.gif" alt="">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        11
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -2
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        19
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Маленькая тансовщица
+                            </div>
+                            <div class="trick_execution">
+                                <span class="triangle"></span>
+                                <!-- <img src="img/icons/triangle.png" alt=""> -->
+                                <span>,</span>
+                                <span class="square"></span>
+                                <!-- <img src="img/icons/square.png" alt=""> -->
+                                <span>,</span>
+                                <span class="triangle"></span>
+                                <!-- <img src="img/icons/triangle.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <img src="img/gif/jade/combo/Tiny_Dancer.gif" alt="">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        14
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -4
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        31
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Стиль Вин-Чунь
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/right.png" alt="">
+                                <span>+</span>
+                                <span class="triangle"></span>
+                                <!-- <img src="img/icons/triangle.png" alt=""> -->
+                                <span>,</span>
+                                <span class="square"></span>
+                                <!-- <img src="img/icons/square.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <img src="img/gif/jade/combo/IP_Girl.gif" alt="">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        25
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -13
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        47
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Сила очарования
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/left.png" alt="">
+                                <span>+</span>
+                                <span class="cross"></span>
+                                <!-- <img src="img/icons/cross.png" alt=""> -->
+                                <span>,</span>
+                                <span class="circle"></span>
+                                <!-- <img src="img/icons/circle.png" alt=""> -->
+                                <span>,</span>
+                                <span class="cross"></span>
+                                <!-- <img src="img/icons/cross.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <img src="img/gif/jade/combo/Enchanted.gif" alt="">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        16
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -7
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        10
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Роковое влечение
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/left.png" alt="">
+                                <span>+</span>
+                                <span class="cross"></span>
+                                <!-- <img src="img/icons/cross.png" alt=""> -->
+                                <span>,</span>
+                                <span class="circle"></span>
+                                <!-- <img src="img/icons/circle.png" alt=""> -->
+                                <span>,</span>
+                                <span class="cross"></span>
+                                <!-- <img src="img/icons/cross.png" alt=""> -->
+                                <span>,</span>
+                                <span class="circle"></span>
+                                <!-- <img src="img/icons/circle.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <img src="img/gif/jade/combo/Fatal_Attraction.gif" alt="">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        22
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        5
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        20
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Императорская стража
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/right.png" alt="">
+                                <span>+</span>
+                                <span class="cross"></span>
+                                <!-- <img src="img/icons/cross.png" alt=""> -->
+                                <span>,</span>
+                                <span class="circle"></span>
+                                <!-- <img src="img/icons/circle.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <img src="img/gif/jade/combo/Royal_Guard.gif" alt="">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        20
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -5
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        8
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Эденийский бросок
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/right.png" alt="">
+                                <span>+</span>
+                                <span class="cross"></span>
+                                <!-- <img src="img/icons/cross.png" alt=""> -->
+                                <span>,</span>
+                                <span class="circle"></span>
+                                <!-- <img src="img/icons/circle.png" alt=""> -->
+                                <span>,</span>
+                                <span class="cross"></span>
+                                <!-- <img src="img/icons/cross.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <img src="img/gif/jade/combo/Edenian_Rush.gif" alt="">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        18
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -6
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        28
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Харизма убийцы
+                            </div>
+                            <div class="trick_execution">
+                                <span class="circle"></span>
+                                <!-- <img src="img/icons/circle.png" alt=""> -->
+                                <span>,</span>
+                                <span class="cross"></span>
+                                <!-- <img src="img/icons/cross.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <img src="img/gif/jade/combo/Killer_Charisma.gif" alt="">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        21
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -8
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        23
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                С удовольствием
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/right.png" alt="">
+                                <span>+</span>
+                                <span class="circle"></span>
+                                <!-- <img src="img/icons/circle.png" alt=""> -->
+                                <span>,</span>
+                                <span class="square"></span>
+                                <!-- <img src="img/icons/square.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <img src="img/gif/jade/combo/My_Pleasure.gif" alt="">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        13
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -14
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        16
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- tab content  special -->
+            <div class="tab_content" id="special">
+                <ul class="trick_list">
+                    <h3 class="subtitle">
+                        Спецприемы
+                    </h3>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Разоранг
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/left.png" alt="">
+                                <img src="img/icons/right.png" alt="">
+                                <span class="square"></span>
+                                <!-- <img src="img/icons/square.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <img src="img/gif/jade/spec/Разоранг.gif" alt="Разоранг">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        20
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -15
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        7
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="trick_item trick_power">
+                        <div class="trick_info">
+                            <div class="trick_name small">
+                                Усиление
+                            </div>
+                            <div class="trick_execution">
+                                <span class="r1"></span>
+                                <!-- <img src="img/icons/r1.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <img src="img/gif/jade/spec/Разоранг_усиление.gif" alt="Разоранг">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        23
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        7
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        7
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Смертоносная бабочка
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/left.png" alt="">
+                                <img src="img/icons/right.png" alt="">
+                                <span class="triangle"></span>
+                                <!-- <img src="img/icons/triangle.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <img src="img/gif/jade/spec/Смертоносная_бабочка.gif" alt="Смертоносная_бабочка">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        13
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -13
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        31
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Неуловимые тени
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/down.png" alt="">
+                                <img src="img/icons/left.png" alt="">
+                                <span class="triangle"></span>
+                                <!-- <img src="img/icons/triangle.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <img src="img/gif/jade/spec/Неуловимые_тени.gif" alt="">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        1
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        -
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Искушение
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/down.png" alt="">
+                                <img src="img/icons/left.png" alt="">
+                                <span class="circle"></span>
+                                <!-- <img src="img/icons/circle.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <img src="img/gif/jade/spec/искушение.gif" alt="искушение">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        12
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        22
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="trick_item trick_power">
+                        <div class="trick_info">
+                            <div class="trick_name small">
+                                Усиление
+                            </div>
+                            <div class="trick_execution">
+                                <span class="r1"></span>
+                                <!-- <img src="img/icons/r1.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <img src="img/gif/jade/spec/искушение_усиленый.gif" alt="">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        10
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        14
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Пылающий нитро удар ногой
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/down.png" alt="">
+                                <img src="img/icons/right.png" alt="">
+                                <span class="circle"></span>
+                                <!-- <img src="img/icons/circle.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <img src="img/gif/jade/spec/нитро_удар_ногой.gif" alt="нитро_удар_ногой">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        12
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -22
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        16
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="trick_item trick_power">
+                        <div class="trick_info">
+                            <div class="trick_name small">
+                                Усиление
+                            </div>
+                            <div class="trick_execution">
+                                <span class="r1"></span>
+                                <!-- <img src="img/icons/r1.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <img src="img/gif/jade/spec/нитро_удар_ногой_усиленый.gif" alt="">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        13
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -18
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        6
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <h3 class="subtitle">
+                        Фатальный удар
+                    </h3>
+
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Рыцарь из эдении
+                            </div>
+                            <div class="trick_execution">
+                                <span class="l2"></span>
+                                <!-- <img src="img/icons/l2.png" alt=""> -->
+                                <span>+</span>
+                                <span class="r2"></span>
+                                <!-- <img src="img/icons/r2.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <img src="img/gif/jade/spec/фатальный_удар.gif" alt="">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        27
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -26
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        14
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- tab content finishers -->
+            <div class="tab_content" id="finishers">
+                <ul class="trick_list">
+                    <h3 class="subtitle">
+                        Добивания
+                    </h3>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Преклонись передо мной (везде)
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/down.png" alt="">
+                                <img src="img/icons/down.png" alt="">
+                                <img src="img/icons/right.png" alt="">
+                                <img src="img/icons/down.png" alt="">
+                                <span class="circle"></span>
+
+                                <!-- <img src="img/icons/circle.png" alt=""> -->
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item trick_power">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Легкое фаталити
+                            </div>
+                            <div class="trick_execution">
+                                <span class="r2"></span>
+                                <span>+</span>
+                                <span class="cross"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Танец на шесте (близко)
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/left.png" alt="">
+                                <img src="img/icons/right.png" alt="">
+                                <img src="img/icons/down.png" alt="">
+                                <img src="img/icons/right.png" alt="">
+                                <span class="cross"></span>
+
+                                <!-- <img src="img/icons/cross.png" alt=""> -->
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item trick_power">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Легкое фаталити
+                            </div>
+                            <div class="trick_execution">
+                                <span class="r2"></span>
+                                <span>+</span>
+                                <span class="circle"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Фаталити арены (близко)
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/left.png" alt="">
+                                <img src="img/icons/right.png" alt="">
+                                <img src="img/icons/down.png" alt="">
+                                <span class="circle"></span>
+
+                                <!-- <img src="img/icons/circle.png" alt=""> -->
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item trick_power">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Легкое фаталити
+                            </div>
+                            <div class="trick_execution">
+                                <span class="r2"></span>
+                                <span>+</span>
+                                <span class="triangle"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <h3 class="subtitle">
+                        Френдшип
+                    </h3>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Я хочу конфетку (средне)
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/left.png" alt="">
+                                <img src="img/icons/down.png" alt="">
+                                <img src="img/icons/down.png" alt="">
+                                <img src="img/icons/down.png" alt="">
+                                <span class="triangle"></span>
+
+                                <!-- <img src="img/icons/triangle.png" alt=""> -->
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item trick_power">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Легкий френдшип
+                            </div>
+                            <div class="trick_execution">
+                                <span class="r2"></span>
+                                <span>+</span>
+                                <span class="cross"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <h3 class="subtitle">
+                        Бруталити
+                    </h3>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Классика
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/down.png" alt="">
+                                <span>+</span>
+                                <span class="triangle"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                В стиле Милины
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/left.png" alt="">
+                                <img src="img/icons/right.png" alt="">
+                                <span class="cross"></span>
+                                <span>,</span>
+                                <span class="r1"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Чистая работа
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/right.png" alt="">
+                                <span>+</span>
+                                <span class="l1"></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- tab content abilities -->
+            <div class="tab_content" id="abilities">
+                <ul class="trick_list">
+                    <h3 class="subtitle">
+                        Способности
+                    </h3>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                <span class="little_e">E</span>
+                                Double Down
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/left.png" alt="">
+                                <span>+</span>
+                                <span class="circle"></span>
+
+                                <!-- <img src="img/icons/circle.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        17
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -8
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        17
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                <span class="little_e">E</span>
+                                Betrayal
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/left.png" alt="">
+                                <span>+</span>
+                                <span class="triangle"></span>
+
+                                <!-- <img src="img/icons/triangle.png" alt=""> -->
+                                <span>,</span>
+                                <span class="square"></span>
+
+                                <!-- <img src="img/icons/square.png" alt=""> -->
+                                <span>,</span>
+                                <span class="triangle"></span>
+
+                                <!-- <img src="img/icons/triangle.png" alt=""> -->
+                                <span>,</span>
+                                <span class="circle"></span>
+
+                                <!-- <img src="img/icons/circle.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        32
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -2
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        47
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                <span class="little_e">E</span>
+                                Playtime Is Over
+                            </div>
+                            <div class="trick_execution">
+                                <span class="cross"></span>
+
+                                <!-- <img src="img/icons/cross.png" alt=""> -->
+                                <span>,</span>
+                                <span class="triangle"></span>
+
+                                <!-- <img src="img/icons/triangle.png" alt=""> -->
+                                <span>,</span>
+                                <span class="triangle"></span>
+
+                                <!-- <img src="img/icons/triangle.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        21
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -5
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        7
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                <span class="little_e">E</span>
+                                Bending Time
+                            </div>
+                            <div class="trick_execution">
+                                <span class="cross"></span>
+
+                                <!-- <img src="img/icons/cross.png" alt=""> -->
+                                <span>,</span>
+                                <span class="triangle"></span>
+
+                                <!-- <img src="img/icons/triangle.png" alt=""> -->
+                                <span>,</span>
+                                <span class="triangle"></span>
+
+                                <!-- <img src="img/icons/triangle.png" alt=""> -->
+                                <span>,</span>
+                                <img src="img/icons/down.png" alt="">
+                                <span>+</span>
+                                <span class="square"></span>
+
+                                <!-- <img src="img/icons/square.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        16
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -10
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        15
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                <span class="little_e">E</span>
+                                Too Easy
+                            </div>
+                            <div class="trick_execution">
+                                <span class="circle"></span>
+
+                                <!-- <img src="img/icons/circle.png" alt=""> -->
+                                <span>,</span>
+                                <span class="cross"></span>
+
+                                <!-- <img src="img/icons/cross.png" alt=""> -->
+                                <span>,</span>
+                                <span class="triangle"></span>
+
+                                <!-- <img src="img/icons/triangle.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        18
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -7
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        28
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                <span class="little_e">E</span>
+                                (Air) Razor-Rang
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/down.png" alt="">
+                                <img src="img/icons/left.png" alt="">
+                                <span class="square"></span>
+
+                                <!-- <img src="img/icons/square.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        14
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -23
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        0
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item trick_power">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                <span class="little_e">E</span>
+                                Amplify
+                            </div>
+                            <div class="trick_execution">
+                                <span class="r1"></span>
+
+                                <!-- <img src="img/icons/r1.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        24
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -1
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        1
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                <span class="little_e">E</span>
+                                Upward Razor-Rang
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/down.png" alt="">
+                                <img src="img/icons/left.png" alt="">
+                                <span class="square"></span>
+
+                                <!-- <img src="img/icons/square.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        20
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -16
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        6
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item trick_power">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                <span class="little_e">E</span>
+                                Amplify
+                            </div>
+                            <div class="trick_execution">
+                                <span class="r1"></span>
+
+                                <!-- <img src="img/icons/r1.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        21
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        1
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        4
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                <span class="little_e">E</span>
+                                Delia's Dance
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/left.png" alt="">
+                                <img src="img/icons/right.png" alt="">
+                                <span class="triangle"></span>
+
+                                <!-- <img src="img/icons/triangle.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        12
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -13
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        8
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item trick_power">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                <span class="little_e">E</span>
+                                Amplify
+                            </div>
+                            <div class="trick_execution">
+                                <span class="r1"></span>
+
+                                <!-- <img src="img/icons/r1.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        9
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -7
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        8
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                <span class="little_e">E</span>
+                                Pole Vault
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/left.png" alt="">
+                                <img src="img/icons/right.png" alt="">
+                                <span class="cross"></span>
+
+                                <!-- <img src="img/icons/cross.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        26
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -3
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        32
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item trick_power">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                <span class="little_e">E</span>
+                                Extend
+                            </div>
+                            <div class="trick_execution">
+                                <span>HOLD</span>
+                                <span class="cross"></span>
+
+                                <!-- <img src="img/icons/cross.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        0
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        0
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        0
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item trick_power">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                <span class="little_e">E</span>
+                                Blazing Nitro Kick
+                            </div>
+                            <div class="trick_execution">
+                                <span>WHILE HoldING</span>
+                                <span class="cross"></span>
+
+                                <!-- <img src="img/icons/cross.png" alt=""> -->
+                                <span></span>
+                                <span></span>
+                                <span>Press</span>
+                                <span class="r1"></span>
+
+                                <!-- <img src="img/icons/r1.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        10
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        3
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        24
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item trick_power">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                <span class="little_e">E</span>
+                                Edenian Knight
+                            </div>
+                            <div class="trick_execution">
+                                <span>WHILE HoldING</span>
+                                <span class="cross"></span>
+
+                                <!-- <img src="img/icons/cross.png" alt=""> -->
+                                <span></span>
+                                <span></span>
+                                <span>Press</span>
+                                <span class="l2"></span>
+
+                                <!-- <img src="img/icons/l2.png" alt=""> -->
+                                <span>+</span>
+                                <span class="r2"></span>
+
+                                <!-- <img src="img/icons/r2.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        27
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -26
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        14
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item trick_power">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                <span class="little_e">E</span>
+                                Amplify
+                            </div>
+                            <div class="trick_execution">
+                                <span class="r1"></span>
+
+                                <!-- <img src="img/icons/r1.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        12
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -14
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        14
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item trick_power">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                <span class="little_e">E</span>
+                                Cancel Pole Vault
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/down.png" alt="">
+                                <img src="img/icons/down.png" alt="">
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        1
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        0
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        0
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                <span class="little_e">E</span>
+                                Edenian Spark
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/down.png" alt="">
+                                <img src="img/icons/left.png" alt="">
+                                <span class="cross"></span>
+
+                                <!-- <img src="img/icons/cross.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        20
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -23
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        14
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                <span class="little_e">E</span>
+                                Vanishing Winds
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/down.png" alt="">
+                                <img src="img/icons/left.png" alt="">
+                                <span class="cross"></span>
+
+                                <!-- <img src="img/icons/cross.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        23
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -4
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        16
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item trick_power">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                <span class="little_e">E</span>
+                                Amplify
+                            </div>
+                            <div class="trick_execution">
+                                <span class="r1"></span>
+
+                                <!-- <img src="img/icons/r1.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        22
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -3
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        22
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                <span class="little_e">E</span>
+                                Divine Forces
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/down.png" alt="">
+                                <img src="img/icons/left.png" alt="">
+                                <span class="triangle"></span>
+
+                                <!-- <img src="img/icons/triangle.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        10
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        0
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        0
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item trick_power">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                <span class="little_e">E</span>
+                                Amplify
+                            </div>
+                            <div class="trick_execution">
+                                <span class="r1"></span>
+
+                                <!-- <img src="img/icons/r1.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        2
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        1
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        44
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item trick_power">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                <span class="little_e">E</span>
+                                Amplify
+                            </div>
+                            <div class="trick_execution">
+                                <span>Again</span>
+                                <span class="r1"></span>
+
+                                <!-- <img src="img/icons/r1.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        2
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        1
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        44
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                <span class="little_e">E</span>
+                                Blazing Nitro Kick
+                            </div>
+                            <div class="trick_execution">
+                                <img src="img/icons/down.png" alt="">
+                                <img src="img/icons/right.png" alt="">
+                                <span class="circle"></span>
+
+                                <!-- <img src="img/icons/circle.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        12
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -22
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        16
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="trick_item trick_power">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                <span class="little_e">E</span>
+                                Amplify
+                            </div>
+                            <div class="trick_execution">
+                                <span class="r1"></span>
+
+                                <!-- <img src="img/icons/r1.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="trick_content">
+                            <div class="framedata">
+                                <div class="framedata_title">
+                                    Данные фреймов
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Старт
+                                    </div>
+                                    <div class="framedata_num start">
+                                        10
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Блок
+                                    </div>
+                                    <div class="framedata_num block">
+                                        -16
+                                    </div>
+                                </div>
+                                <div class="framedata_info">
+                                    <div class="framedata_sub">
+                                        Попадание
+                                    </div>
+                                    <div class="framedata_num hit">
+                                        24
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Super Combo ========================================================================================================== -->
+            <div class="tab_content" id="super">
+                <ul class="trick_list">
+                    <h3 class="subtitle">
+                        Супер-Комбо
+                    </h3>
+                    <li class="trick_item">
+                        <div class="trick_info">
+                            <div class="trick_name">
+                                Быстрая оплеуха
+                            </div>
+                            <div class="trick_execution">
+                                <span class="square"></span>
+                                <!-- <img src="img/icons/square.png" alt=""> -->
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
+
+<!-- <img src="img/gif/jade/spec/Разоранг_усиление.gif" alt="" class="trick_img"> -->
