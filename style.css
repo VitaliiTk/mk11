@@ -51,10 +51,6 @@ body {
     color: #0C356A;
 }
 
-.card {
-    padding-bottom: 50px;
-}
-
 .character-img {
     display: block;
     margin: 0 auto;
@@ -143,7 +139,20 @@ body {
     color: #000;
 }
 
+.footer_text {
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
 
+.footer_text span {
+    font-size: 12px;
+}
+
+.footer_text .italic {
+    /* font-style: italic; */
+    font-size: 16px;
+}
 
 #basic {
     display: none;
