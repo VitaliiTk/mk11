@@ -196,6 +196,7 @@ body {
     visibility: hidden;
     transition: all ease 0.5s;
     transform: scale(0);
+    z-index: 100;
 }
 
 .up-arrow:hover {
@@ -205,4 +206,10 @@ body {
 .up-arrow.active {
     visibility: visible;
     transform: scale(1);
+}
+
+@media (max-width: 720px) {
+    .up-arrow {
+        color: #FFC436;
+    }
 }
