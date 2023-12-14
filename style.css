@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #0C356A;
     font-family: sans-serif;
@@ -84,7 +88,7 @@ body {
     padding: 15px;
     cursor: pointer;
     user-select: none;
-    transition: all 0.3s;
+    /* transition: all 0.3s; */
 }
 
 .tab_link:hover {
@@ -176,4 +180,19 @@ body {
 
 #super {
     display: none;
+}
+
+.up-arrow {
+    position: fixed;
+    bottom: 2px;
+    right: 16%;
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    line-height: 27px;
+}
+
+.up-arrow:hover {
+    color: #FFC436;
 }
