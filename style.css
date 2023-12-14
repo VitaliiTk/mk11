@@ -13,6 +13,7 @@ html {
 body {
     background-color: #0C356A;
     font-family: sans-serif;
+    padding-top: 20px;
 }
 
 .container {
@@ -30,6 +31,7 @@ body {
 
 .navbar .title {
     color: #FFC436;
+    margin: 0 0 10px;
 }
 
 .navbar .hero_list {
@@ -191,8 +193,16 @@ body {
     color: #fff;
     text-align: center;
     line-height: 27px;
+    visibility: hidden;
+    transition: all ease 0.5s;
+    transform: scale(0);
 }
 
 .up-arrow:hover {
     color: #FFC436;
+}
+
+.up-arrow.active {
+    visibility: visible;
+    transform: scale(1);
 }

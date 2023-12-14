@@ -9,3 +9,17 @@ function openTab(event, idName) {
 
     event.currentTarget.classList.add('active')
 }
+
+// up arrow
+const upArrow = document.querySelector('#upArrow');
+function upArrowLogic() {
+    if (window.scrollY == 0) {
+        upArrow.classList.remove('active');
+    } else if (window.scrollY > 0) {
+        upArrow.classList.add('active');
+    }
+}
+
+document.addEventListener('scroll', () => {
+    upArrowLogic();
+})
